@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myui">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyUI">
+        <activity android:name=".login.GoogleLogin"></activity>
+        <activity android:name=".grids.Study" />
+        <activity android:name=".grids.Entertainment" />
+        <activity android:name=".grids.News.Gallery" />
+        <activity android:name=".grids.Blog" />
+        <activity android:name=".grids.Sport" />
+        <activity
+            android:name=".facedetect.PhotoViewerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".facedetect.FaceEmotion"
+            android:screenOrientation="portrait" />
+        <activity android:name=".login.FaceidLogin" />
+        <activity android:name=".login.FingerprintLogin" />
+        <activity android:name=".grids.News.MyBookMarks" />
+        <activity android:name=".login.SignUp" />
+        <activity android:name=".time.Calendar" />
+        <activity android:name=".login.Login" />
+        <activity android:name=".time.Alarm" />
+        <activity android:name=".time.Schedule" />
+        <activity android:name=".mynotes.notes.NoteActivity" />
+        <activity android:name=".mynotes.notes.EditNoteActivity" />
+        <activity android:name=".mynotes.notes.AddNoteActivity" />
+        <activity android:name=".nothing.Nothing" />
+        <activity android:name=".mynotes.Notes" />
+        <activity android:name=".favourite.friends.EditFriendActivity" />
+        <activity android:name=".favourite.friends.AddFriendActivity" />
+        <activity android:name=".favourite.friends.FriendActivity" />
+        <activity android:name=".favourite.friends.EditFriendActivity" />
+        <activity android:name=".grids.Finance" />
+        <activity android:name=".grids.Health" />
+        <activity android:name=".grids.Goals" />
+        <activity android:name=".favourite.Favourite" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".intro.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face" /> <!-- To use multiple models: android:value="face,model2,model3" -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

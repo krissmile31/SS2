@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grids.Goals">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/goalsani"
+        android:layout_width="1170dp"
+        android:layout_height="1968dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        android:src="@drawable/galshir_reaching_goals" />
+
+    <RelativeLayout
+        android:id="@+id/setyourgoals"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="@drawable/white_rectangle_background">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/cedarville_cursive"
+            android:text="SET YOUR GOALS"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/setyourgoals"
+        android:layout_marginTop="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:id="@+id/financialgoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/white_rectangle_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Financial Management: "
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/healthgoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/financialgoal"
+                    android:background="@drawable/white_rectangle_background"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Health Management: "
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/studygoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@id/healthgoal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rectangle_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Study Management: "
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sportgoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@id/studygoal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rectangle_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sport Management: "
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bloggoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@id/sportgoal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rectangle_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blog Management: "
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/newsgoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@id/bloggoal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rectangle_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="News Management: "
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/relaxgoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@id/newsgoal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_rectangle_background">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Relax Management: "
+                        android:layout_marginStart="10dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".favourite.friends.AddFriendActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="monospace"
+        android:text="New Friend"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#9C2222"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="19dp"
+        app:srcCompat="@drawable/checked" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="295dp"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@drawable/unchecked" />
+
+    <EditText
+        android:id="@+id/newName"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/newNickname"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Nickname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/newInsta"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Instagram"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/newFb"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Facebook ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/newPhoneNo"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/newEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/newEmail"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

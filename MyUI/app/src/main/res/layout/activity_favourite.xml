@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F4F8"
+    tools:context=".favourite.Favourite">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="379dp"
+        android:layout_height="235dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="168dp"
+        android:src="@drawable/click"></pl.droidsonroids.gif.GifImageView>
+
+    <TextView
+        android:id="@+id/friend"
+        android:layout_width="363dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/white_rectangle_background"
+        android:backgroundTint="#DDAFDB"
+        android:fontFamily="@font/allura"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:text="My Friends"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

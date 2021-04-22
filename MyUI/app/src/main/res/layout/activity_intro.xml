@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".intro.IntroActivity">
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="220dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/viewPager"
+        android:layout_alignBottom="@+id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-190dp"
+        android:layout_marginBottom="70dp"
+        android:alpha="0"
+        android:background="#00BCD4"
+        android:fontFamily="casual"
+        android:text="GET STARTED"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="656dp"
+        android:layout_marginBottom="55dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="22dp"
+        android:text="Skip"
+        android:textColor="#F44336"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grids.Comfort">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="1170dp"
+        android:layout_height="1968dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wuseiw" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="199dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-52dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#0E0D0D"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+</RelativeLayout>

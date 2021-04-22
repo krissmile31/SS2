@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.FingerprintLogin">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/finger"
+        android:layout_width="264dp"
+        android:layout_height="227dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="151dp"
+        android:src="@drawable/fingerprint" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/fingersensor"
+        android:layout_width="264dp"
+        android:layout_height="227dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="73dp"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ffingerprint" />
+
+    <Button
+        android:id="@+id/loginFing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="173dp"
+        android:background="@drawable/white_rectangle_background"
+        android:backgroundTint="#6F2196F3"
+        android:backgroundTintMode="src_atop"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Login"
+        android:textColor="#101010"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvFing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="118dp"
+        android:fontFamily="@font/bubbler_one"
+        android:textColor="#D81515"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/tick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tick"
+        android:alpha="0"/>
+
+
+</RelativeLayout>

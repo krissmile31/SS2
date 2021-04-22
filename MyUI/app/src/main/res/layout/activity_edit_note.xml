@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mynotes.notes.EditNoteActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:text="Edit Note"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#9C27B0"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/editNote"
+        android:layout_width="370dp"
+        android:layout_height="359dp"
+        android:layout_below="@id/TextView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/ic_baseline_notes_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Note"
+        android:inputType="textMultiLine|text"
+        android:paddingTop="0dp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/notok"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="295dp"
+        android:layout_marginBottom="39dp"
+        app:srcCompat="@drawable/unchecked"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <ImageView
+        android:id="@+id/ok"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="39dp"
+        app:srcCompat="@drawable/checked"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+</RelativeLayout>

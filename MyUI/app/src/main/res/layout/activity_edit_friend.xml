@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".favourite.friends.EditFriendActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:text="Edit Friend"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#9C27B0"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editNickname"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Nickname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editInsta"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Instagram"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editFb"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Facebook ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPhoneNo"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/notok"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="305dp"
+        android:layout_marginBottom="24dp"
+        app:srcCompat="@drawable/unchecked"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <ImageView
+        android:id="@+id/ok"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="24dp"
+        app:srcCompat="@drawable/checked"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+</RelativeLayout>
